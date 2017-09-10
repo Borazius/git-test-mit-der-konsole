@@ -5,6 +5,6 @@
 *.orig
 
 ### Meine spezielle Datei die ich aus Git ausschliessen möchte ###
-testdatei-fuer-gitignore.txt
+*testdatei-fuer-gitignore.txt
 
 # End of https://www.gitignore.io/api/git
