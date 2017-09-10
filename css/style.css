@@ -1,0 +1,392 @@
+
+/* = Style.css
+-------------------------------------------------------------- */  
+
+
+/* = Body and Basics - Customizing
+-------------------------------------------------------------- */  
+body{
+    /* background-image: url(../img/bg.jpg); */
+    background-color: #FFFFFF;
+    background-size: cover;             
+    background-repeat: no-repeat;           
+    font-family: Thesis,arial,roboto,"droid sans",helvetica,sans-serif;
+    font-size: 100%;                                                      /* Schriftgröße passt sich an Bildschirmgröße an*/
+    color:#41474c;
+    margin: 0em;                                                          /* em -> relative Angabe, die mit Schriftgröße zusammenarbeitet */
+    padding: 0em;                                                          /* innerer Abstand */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1{
+    font-size: 1.5em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;;
+    font-weight: 500; 
+    color: #252525;
+    margin: 0em;
+    padding-top:10px; 
+    padding-left:10px;
+    padding:2%;
+}
+h2{
+    color: #252525;
+    padding-top:10px; 
+    padding-left:10px;
+    padding:2%;
+}
+#hr{
+    width: 100%;
+    border-top: 1px solid #D2D2D2;
+    margin-top: 1%;
+}
+p{
+    line-height: 1.5em;            
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: 100; 
+    color: #a0bf07;
+    margin: 0em;
+    padding: 1.25em;
+    text-align: justify;                            /* Blocksatz */
+}
+
+/* = Blockdarstellung für HTML5-Elemente im IE8. Alle neuere Browser stellen die HTML5- Elemente schon als display:block dar
+-------------------------------------------------------------- */  
+header,
+nav,
+footer{
+    display: block;
+}
+
+
+/* = TopMaske -Topleiste
+-------------------------------------------------------------- */  
+#mask{
+    width: 100%;
+    background-color: #aee630;                      /* alte coole Farbe: #ccff33;*/
+    height: 25px;
+}
+
+/* = Topleiste
+-------------------------------------------------------------- */       
+#topleiste{ 
+    width: 25%;
+    color:#ffffff;
+    height: 45px;  
+    margin: 0 auto;
+    float: right;    
+    margin-right: 5%;
+    margin-bottom: 30px;
+}
+#topleiste ul{  
+    margin: 0px;
+    padding: 0px;     
+}
+#topleiste li{
+   list-style: none;
+   float:right; 
+   margin: 5px 20px 0px 10px;
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+   display: inline;
+}
+#topleiste a{   
+    font-size: 65%;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;   
+    border-right: 1px solid #ffffff;
+    padding: 0 7px 0 0;
+    margin: 0 7px 0 0;
+}                  
+#topleiste a:link{
+    color:#FFFFFF;
+    text-decoration: none;                
+}
+#topleiste a:hover{
+    color:black;
+    background-color: #97BF0C; 
+    text-decoration: none;
+}
+#topleiste a:visited{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+/* = Wrapper
+-------------------------------------------------------------- */  
+#wrapper{
+    padding-top: 8%;
+    background-color: white;
+    margin: 0 auto;
+    width: 100%;                 /*für responsible Webdesign arbeiten wir in %-Werten*/
+    max-width: 1100px;           /* das ist die entscheidende Zeile, das die Website responsible macht! Bedeutet: Wrapper ist maximal 1000px                                     breit, kann aber auch kleiner sein!  */
+    
+}
+
+/* = Header including: Topleiste, Logo & Navigation
+-------------------------------------------------------------- */       
+header{
+    background: white;
+    color:#ffffff;
+    height: auto;   
+    width: 100%;
+    top:8%;
+    z-index: 999;
+    overflow: hidden;
+    position: fixed;
+    margin: 0 auto;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}   
+
+/* = Logo
+-------------------------------------------------------------- */  
+#logo{
+    
+    
+    content:url('../img/webmundo_logo.png'); 
+    padding: 8px;
+    width: 15%;
+    min-width: 18%;
+    height: auto;
+    float: left;
+    padding-left:6%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+/* = Navigation
+-------------------------------------------------------------- */  
+nav{    
+    width: 75%;
+    height: 20px;
+    color:#41474c;   
+    background-color: white;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    top: 75%;
+    left:45%;
+}
+nav ul{   
+    list-style: none;      
+    margin: 0px;
+    padding: 0px;
+}
+nav li{ 
+    display: inline;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    float: left;
+    margin-left: 20px;
+}   
+nav a{                   
+    font-size: 90%;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin-left: 15px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}  
+nav a:link{
+    color:#BBBBBB;  
+    text-decoration: none;
+}
+nav a:visited{
+    color:#BBBBBB;  
+    text-decoration: none;
+}
+nav a:hover{
+    color:#006699;  
+    text-decoration: none;
+    border-bottom: 0.13em solid #ccff33;
+}
+
+
+/* = Neuer Zusatz header
+-------------------------------------------------------------- */
+header.smaller {
+    height: auto;
+    top:0;
+}
+header.smaller #logo {
+    height: auto;
+}
+header.smaller nav {
+}
+header.smaller nav a {     
+    font-size: 88%;
+}
+header.smaller #topleiste a {     
+    font-size: 70%;;
+}
+
+
+/* = Content
+-------------------------------------------------------------- */
+.content{
+    background-color: #eee;
+    display: block;
+    width: 90%;
+    padding-top: 7%;
+    margin: auto;           /* zentrieren es mit auto */
+}
+.content p{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #252525;
+    /* color: #a0bf07; */
+    padding: 1.25em;
+    text-align: justify;  
+    padding:2%;
+}
+          
+      
+/* = Footer
+-------------------------------------------------------------- */
+footer{
+    background-color: #f5f5f5;
+    padding: 30px 0;
+    margin-top: 19px;
+    text-align: center;
+    width: 100%;
+    margin: 1.2em auto;             /* zentrieren es mit auto */
+    
+}
+footer ul{
+    display: block;
+    width: 100%;
+    max-width: 980px;
+    text-align: left;
+    margin: 0px auto;
+}
+footer ul li{
+    display: inline;
+    font-size: 0.8em;
+    line-height: 2.8em;
+    color: black;
+    padding: 0em 0.625em 0em 0.625em;
+}
+footer ul li a{
+    color: black;
+}
+
+
+
+/* =Einselne Seite für OnePage
+-------------------------------------------------------------- */
+#About { background:green;width:100%; height:100%;margin-top: }
+#Skills { background:#D43D40;width:100%; height:100%;width:100%; height:100%;width:100%; height:100%;width:100%; height:100%;}
+#Experience { background:#3ECCAF;width:100%; height:100%;width:100%; height:100%;width:100%; height:100%;}
+#Portfolio { background:#57D36D;width:100%; height:100%;width:100%; height:100%;}
+#Education { background:#E046C2;width:100%; height:100%;}
+#Contact { background:#ff6600;width:100%; height:100%;}
+
+
+
+/* =Extras
+-------------------------------------------------------------- */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0; }
+
+
+/* =Media Queries
+-------------------------------------------------------------- */
+@media screen and (max-width:290px){    /* Bedeutet: wenn Bildschirm kleiner als 300px hat, gilt das! */
+    
+    body{   
+        font-size: 90%;  
+    }
+    #wrapper{
+        background-color: white;
+    } 
+    header{
+        max-height: 100px;   
+        background: #FFFFFF;
+        width: 100%;
+        margin: 0 auto;
+    }    
+    #logo{
+        position: relative
+        margin-top:-20px;
+        margin: auto;
+        padding: 0px;
+        min-width: 100%;
+    }
+    #topleiste{
+        display: none;
+    } 
+    nav{    
+        color:#41474c;     
+        width: 68%;
+        height: 5%;
+        margin: 0 auto;
+        margin-top: 2%;
+        margin-bottom: 33%;
+    }
+    nav li a{
+        color:red;
+        display: block;
+   }    
+}
+
+
+@media all and (max-width: 600px) {
+  .container {
+    width: 100%; }
+  
+
+@media all and (max-width: 660px) {
+  /* =Header
+  -------------------------------------------------------------- */
+  header logo {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+  header nav {
+    display: block;
+    float: none;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto; }
+    header nav a {
+      line-height: 50px;
+      margin: 0 10px; 
+    }    
+    header nav a {
+        line-height: 50px;
+        margin: 0 10px;
+    }
+  header.smaller {
+    height: 75px; 
+    }
+    
+    header.smaller logo {
+      height: 40px;
+      line-height: 40px;
+      font-size: 30px; 
+    }
+    header.smaller nav {
+        height: 35px;
+    }
+    header.smaller nav a {
+        line-height: 35px;
+    }
+   
+}
