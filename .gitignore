@@ -1,10 +1,4 @@
 
-# Created by https://www.gitignore.io/api/git
 
-### Git ###
-*.orig
-
-### Meine spezielle Datei die ich aus Git ausschliessen möchte ###
-*testdatei-fuer-gitignore.txt
-
-# End of https://www.gitignore.io/api/git
+# Can ignore specific files
+testdatei-fuer-gitignore.txt
